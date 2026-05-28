@@ -1,0 +1,5 @@
+# tata_power_export.csv
+facility_code,account_number,meter_id,consumption,unit,tariff_type,provider_name
+MU01,ACC001,MTR4421,3400,MWh,Flat,Tata Power
+PU02,ACC002,MTR5532,1200,MWh,ToU,Tata Power
+BLR01,ACC003,MTR6643,800,MWh,Flat,Tata Power

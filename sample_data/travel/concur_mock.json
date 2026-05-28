@@ -1,0 +1,17 @@
+[
+  {
+    "employee_id": "EMP001",
+    "travel_type": "flight",
+    "origin": "BOM",
+    "destination": "DEL",
+    "travel_class": "Economy",
+    "distance_km": 1150
+  },
+  {
+    "employee_id": "EMP002",
+    "travel_type": "hotel",
+    "hotel_name": "Taj Mumbai",
+    "hotel_city": "Mumbai",
+    "nights": 3
+  }
+]

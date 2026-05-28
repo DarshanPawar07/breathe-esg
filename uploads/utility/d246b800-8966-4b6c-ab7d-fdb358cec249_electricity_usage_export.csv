@@ -1,0 +1,7 @@
+Meter_ID,Facility_Name,Billing_Start,Billing_End,Consumption_Value,Unit,Tariff_Type,Peak_kWh,OffPeak_kWh,Cost_Currency,Total_Cost
+MTR-88421,Mumbai Manufacturing Plant,2025-01-01,2025-01-31,48210,kWh,Industrial_HT,18200,30010,INR,421880
+MTR-88422,Bangalore Warehouse,2025-01-05,2025-02-04,12890,KWH,Commercial_LT,4200,8690,INR,118400
+MTR-88423,Delhi Office Tower,2025-01-15,2025-02-14,8650,kwh,Commercial_LT,2500,6150,INR,96500
+MTR-88424,Mumbai Manufacturing Plant,2025-02-01,2025-02-28,51020,kWh,Industrial_HT,20100,30920,INR,447200
+MTR-00000,Unknown Facility,2025-02-01,2025-02-28,999999,kWh,Industrial_HT,500000,499999,INR,9999999
+MTR-88425,Bangalore Warehouse,2025-02-05,2025-03-04,-200,kWh,Commercial_LT,0,0,INR,-1500

@@ -1,0 +1,4 @@
+# adani_energy_export.csv
+facility_code,account_number,meter_id,consumption,unit,tariff_type,provider_name
+MU01,AD001,MTR9001,500,kWh,Flat,Adani Energy
+PU02,AD002,MTR9002,1200,kWh,ToU,Adani Energy

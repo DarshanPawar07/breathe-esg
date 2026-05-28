@@ -1,0 +1,5 @@
+# german_fuel_export.csv
+BUKRS,WERKS,MATNR,MAKTX,MENGE,MEINS,BLDAT,SGTXT
+1000,MU01,DIESEL01,Diesel,"500,00",L,15.03.24,Fuel purchase Mumbai
+1000,PU02,DIESEL01,Diesel,"1200,50",L,18.03.24,Fuel purchase Pune
+1000,BLR01,DIESEL01,Diesel,"700,25",L,20.03.24,Fuel purchase Bangalore

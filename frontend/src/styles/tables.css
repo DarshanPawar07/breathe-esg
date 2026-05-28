@@ -1,0 +1,93 @@
+.table-wrapper {
+  background: #121212;
+
+  border: 1px solid #262626;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+}
+
+.data-table {
+  width: 100%;
+}
+
+.data-table thead {
+  background: #181818;
+}
+
+.data-table th {
+  text-align: left;
+
+  padding: 18px;
+
+  color: #9f9f9f;
+
+  font-size: 13px;
+
+  border-bottom: 1px solid #242424;
+}
+
+.data-table td {
+  padding: 18px;
+
+  border-bottom: 1px solid #1d1d1d;
+
+  font-size: 14px;
+}
+
+.data-table tbody tr {
+  transition: 0.2s ease;
+}
+
+.data-table tbody tr:hover {
+  background: #171717;
+}
+
+.status-badge {
+  padding: 8px 12px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  display: inline-flex;
+
+  align-items: center;
+}
+
+.table-actions {
+  display: flex;
+
+  gap: 10px;
+}
+
+.action-button {
+  padding: 8px 14px;
+
+  border-radius: 10px;
+
+  font-size: 13px;
+
+  transition: 0.2s ease;
+}
+
+.action-button.approve {
+  background: #183321;
+
+  color: #74dd98;
+}
+
+.action-button.flag {
+  background: #3a1717;
+
+  color: #ff9090;
+}
+
+.action-button.lock {
+  background: #222222;
+
+  color: #c5c5c5;
+}

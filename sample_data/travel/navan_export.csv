@@ -1,0 +1,5 @@
+# navan_export.csv
+employee_id,travel_type,origin,destination,travel_class,distance_km
+EMP100,flight,BOM,DEL,Business,1150
+EMP101,flight,DEL,BLR,Economy,1740
+EMP102,ground,Mumbai,Pune,,150

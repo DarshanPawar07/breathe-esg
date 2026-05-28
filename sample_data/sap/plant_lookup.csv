@@ -1,0 +1,5 @@
+# plant_lookup.csv
+plant_code,facility_name,city,country
+MU01,Mumbai Plant,Mumbai,India
+PU02,Pune Warehouse,Pune,India
+BLR01,Bangalore Office,Bangalore,India

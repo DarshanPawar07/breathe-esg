@@ -1,0 +1,17 @@
+Record_ID,Employee_ID,Travel_Date,Type,Origin,Destination,Class,Distance_KM,Nights,Hotel_Name,Hotel_City
+TR001,EMP001,10/03/2024,flight,BOM,DEL,Economy,,,,
+TR002,EMP002,11/03/2024,hotel,,,,, 3,Taj Mumbai,Mumbai
+TR003,EMP003,12/03/2024,ground,,,,,,,
+TR004,EMP004,15/03/2024,flight,DEL,BLR,Business,,,,
+TR005,EMP005,16/03/2024,hotel,,,,,2,ITC Gardenia,Bangalore
+TR006,EMP006,18/03/2024,flight,BOM,CCU,Economy,,,,
+TR007,EMP007,20/03/2024,ground,,,,89,,,
+TR008,EMP008,,flight,BOM,HYD,Economy,,,,
+TR009,EMP009,22/03/2024,flight,XYZ,ABC,Economy,,,,
+TR010,EMP010,25/03/2024,hotel,,,,,45,Some Hotel,
+TR011,EMP011,26/03/2024,ground,,,,5500,,,
+TR012,EMP012,28/03/2024,flight,DEL,CCU,First,,,,
+TR013,EMP013,29/03/2024,unknown,,,,,,, ,
+TR014,EMP014,30/03/2024,hotel,,,,,,,Oberoi Delhi,Delhi
+TR015,EMP015,31/03/2024,flight,BOM,DEL,abcclass,,,,
+TR016,EMP016,01/03/2024,flight,,,,1500,,,

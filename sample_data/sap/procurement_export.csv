@@ -1,0 +1,4 @@
+# procurement_export.csv
+BUKRS,WERKS,MATNR,MAKTX,MENGE,MEINS,BLDAT,SGTXT
+1000,MU01,CHEM001,Industrial Solvent,"150,00",GAL,12.03.24,Chemical procurement
+1000,PU02,LUBE001,Lubricant Oil,"300,00",L,16.03.24,Machine lubrication
