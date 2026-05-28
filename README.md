@@ -4,6 +4,43 @@ A full-stack ESG emissions intelligence platform built for enterprise sustainabi
 
 ---
 
+# Live Deployment
+
+## Frontend
+
+https://breathe-esg-swart.vercel.app/
+
+## Backend API
+
+https://breathe-esg-production-edc7.up.railway.app/api
+
+---
+
+# Production Deployment Stack
+
+| Service        | Platform   |
+| -------------- | ---------- |
+| Frontend       | Vercel     |
+| Backend        | Railway    |
+| Database       | PostgreSQL |
+| Static Hosting | WhiteNoise |
+
+---
+
+# Production Features
+
+* Full-stack cloud deployment
+* PostgreSQL production database
+* REST API architecture
+* File upload pipelines
+* Production-ready React frontend
+* Railway cloud backend hosting
+* Vercel frontend deployment
+* Responsive dashboard UI
+* Upload history tracking
+* ESG emissions normalization pipeline
+
+
 # Overview
 
 Enterprise sustainability teams receive emissions-related operational data from multiple disconnected systems:
