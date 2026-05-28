@@ -44,6 +44,27 @@ function Dashboard() {
 
 
   // ─────────────────────────────
+  // SAFE RECORDS
+  // ─────────────────────────────
+
+  const safeRecords = useMemo(() => {
+
+    if (Array.isArray(records)) {
+
+      return records
+    }
+
+    if (records?.results) {
+
+      return records.results
+    }
+
+    return []
+
+  }, [records])
+
+
+  // ─────────────────────────────
   // FILTER BY STATUS TAB
   // ─────────────────────────────
 
@@ -51,16 +72,20 @@ function Dashboard() {
 
     if (activeTab === 'all') {
 
-      return records
+      return safeRecords
     }
 
-    return records.filter((record) =>
+    return safeRecords.filter((record) =>
 
       record.status === activeTab
     )
 
-  }, [records, activeTab])
+  }, [safeRecords, activeTab])
 
+
+  // ─────────────────────────────
+  // LOADING STATE
+  // ─────────────────────────────
 
   if (loading) {
 
@@ -68,6 +93,11 @@ function Dashboard() {
       <Loader text="Loading dashboard..." />
     )
   }
+
+
+  // ─────────────────────────────
+  // UI
+  // ─────────────────────────────
 
   return (
 

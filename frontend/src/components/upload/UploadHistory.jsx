@@ -27,7 +27,7 @@ function UploadHistory() {
       const response =
         await axios.get(
 
-          'http://127.0.0.1:8000/api/upload-history/'
+          '/upload-history/'
         )
 
       setUploads(response.data)

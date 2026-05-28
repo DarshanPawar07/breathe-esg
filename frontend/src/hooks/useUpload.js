@@ -1,10 +1,6 @@
 import { useState } from 'react'
 
-import axios from 'axios'
-
-
-const API_BASE =
-  'http://127.0.0.1:8000/api'
+import api from '../api/api'
 
 
 function useUpload() {
@@ -54,14 +50,14 @@ function useUpload() {
       )
 
 
-      // API URL
+      // API ENDPOINT
 
       let endpoint = ''
 
       if (sourceType === 'SAP') {
 
         endpoint =
-          `${API_BASE}/upload/sap/`
+          '/upload/sap/'
       }
 
       else if (
@@ -69,20 +65,20 @@ function useUpload() {
       ) {
 
         endpoint =
-          `${API_BASE}/upload/utility/`
+          '/upload/utility/'
       }
 
       else {
 
         endpoint =
-          `${API_BASE}/upload/travel/`
+          '/upload/travel/'
       }
 
 
       // REQUEST
 
       const response =
-        await axios.post(
+        await api.post(
 
           endpoint,
 
