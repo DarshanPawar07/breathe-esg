@@ -40,6 +40,7 @@ https://breathe-esg-production-edc7.up.railway.app/api
 * Upload history tracking
 * ESG emissions normalization pipeline
 
+---
 
 # Overview
 
@@ -98,15 +99,16 @@ This platform standardizes those inputs into a unified emissions model (`Emissio
 
 # Tech Stack
 
-| Layer           | Technology            |
-| --------------- | --------------------- |
-| Backend         | Django 5              |
-| API             | Django REST Framework |
-| Frontend        | React + Vite          |
-| Database        | SQLite                |
-| Data Processing | Pandas                |
-| HTTP Client     | Axios                 |
-| Deployment      | Railway               |
+| Layer            | Technology                              |
+| ---------------- | --------------------------------------- |
+| Backend          | Django 5                                |
+| API              | Django REST Framework                   |
+| Frontend         | React + Vite                            |
+| Database         | PostgreSQL + SQLite (local development) |
+| Data Processing  | Pandas                                  |
+| HTTP Client      | Axios                                   |
+| Frontend Hosting | Vercel                                  |
+| Backend Hosting  | Railway                                 |
 
 ---
 
@@ -274,7 +276,7 @@ Start backend server:
 python manage.py runserver
 ```
 
-Backend:
+Backend (Local):
 
 ```text
 http://localhost:8000
@@ -292,10 +294,16 @@ npm install
 npm run dev
 ```
 
-Frontend:
+Frontend (Local):
 
 ```text
 http://localhost:5173
+```
+
+Frontend (Production):
+
+```text
+https://breathe-esg-swart.vercel.app/
 ```
 
 ---
@@ -364,13 +372,14 @@ The ingestion layer handles:
 # API Endpoints
 
 ```text
-GET   /api/tenants/
-GET   /api/facilities/
 GET   /api/emission-records/
 
 POST  /api/upload/sap/
 POST  /api/upload/utility/
 POST  /api/upload/travel/
+
+GET   /api/upload-history/
+GET   /api/dashboard/
 ```
 
 ---
@@ -429,11 +438,11 @@ The ingestion and normalization logic remains identical regardless of whether da
 
 ---
 
-## Why SQLite?
+## Why SQLite + PostgreSQL?
 
-SQLite was chosen for simplicity and portability during development.
+SQLite was used during local development for simplicity and portability.
 
-Production deployment would use PostgreSQL.
+Production deployment uses PostgreSQL hosted on Railway for improved scalability and production-grade persistence.
 
 ---
 
@@ -445,7 +454,6 @@ Production deployment would use PostgreSQL.
 * No asynchronous ingestion queue
 * Emission factors are hardcoded
 * Limited airport lookup coverage
-* SQLite not suitable for production-scale concurrency
 
 See `TRADEOFFS.md` for full details.
 
@@ -453,13 +461,35 @@ See `TRADEOFFS.md` for full details.
 
 # Deployment
 
-The project is designed for Railway deployment.
+## Frontend Deployment
 
-Example environment variables:
+Frontend is deployed on Vercel:
 
-```text
+https://breathe-esg-swart.vercel.app/
+
+## Backend Deployment
+
+Backend API is deployed on Railway:
+
+https://breathe-esg-production-edc7.up.railway.app/api
+
+## Production Database
+
+Production database uses PostgreSQL hosted on Railway.
+
+## Environment Variables
+
+### Backend
+
+```env
 SECRET_KEY=<secret>
 DEBUG=False
+```
+
+### Frontend
+
+```env
+VITE_API_BASE_URL=https://breathe-esg-production-edc7.up.railway.app/api
 ```
 
 ---
